@@ -43,55 +43,77 @@
 <main>
   <div class="brand"><span class="dot"></span><span style="font-weight:700">Nightfall</span></div>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 11 August 2026</p>
+  <p class="updated">Last updated: 8 November 2026</p>
 
   <div class="tldr">
-    <strong>The short version:</strong> Nightfall does not collect, transmit, or sell any personal
-    data. There is no account, no internet, no analytics, and no advertising. Everything happens
-    entirely on your device.
+    <strong>The short version:</strong> Nightfall has no ads, no analytics, no tracking and no sign-up.
+    <strong>Single-phone mode</strong> works fully offline and nothing leaves your device.
+    <strong>Multi-device mode</strong> (everyone plays on their own phone) sends only what the game needs —
+    your nickname and your moves — to a game room on Google Firebase, and the room is deleted when the game ends.
+    We never sell or share your data.
   </div>
 
-  <h2>1. Information we collect</h2>
-  <p><strong>None.</strong> Nightfall has no user accounts and contains no analytics, tracking, or
-  advertising software. The app does not send your data to us or to anyone else. We, the developer,
-  have no way to see anything you do in the app.</p>
+  <h2>1. Single-phone mode (offline)</h2>
+  <p>In single-phone mode the app does not connect to the internet. The player names you type and your
+  preferences (sound, language) are saved <strong>only on your device</strong>, in the app's private storage.
+  Uninstalling Nightfall erases them.</p>
 
-  <h2>2. The app is fully offline</h2>
-  <p>Nightfall does not connect to the internet. It never uploads anything, and it contains
-  <strong>no analytics, no tracking, and no ads</strong>. You can play with the device in airplane
-  mode from start to finish.</p>
-
-  <h2>3. Data stored on your device</h2>
-  <p>To run a game, some information is saved <strong>only on your phone</strong>, in the app's
-  private storage:</p>
+  <h2>2. Multi-device mode (online)</h2>
+  <p>When you create or join a room, Nightfall uses <strong>Google Firebase</strong> (a service of Google LLC)
+  to connect the phones in the room. Only the following is sent:</p>
   <ul>
-    <li>The player names you type during setup (e.g. "Alex", "Maya").</li>
-    <li>App preferences (sound on/off, language).</li>
+    <li><strong>Your nickname</strong> — the name you type to join (up to 16 characters). Other players in the
+    same room see it. You do not need to use your real name.</li>
+    <li><strong>Game data</strong> — the room code, your moves (for example votes and night choices), the role
+    the app gives you and connection signals that show whether you are still in the room.</li>
+    <li><strong>A random anonymous ID</strong> — Firebase Authentication creates it automatically so the room can
+    tell the phones apart. It is not linked to your name, email, phone number or any account.</li>
   </ul>
-  <p>This data never leaves your device and is used only to run the current game. Removing
-  (uninstalling) Nightfall erases all of it.</p>
+  <p>To keep the game fair, each player's role is visible only to that player and to the room host's phone,
+  which runs the game.</p>
 
-  <h2>4. Permissions</h2>
-  <p>Nightfall does not request access to your contacts, location, camera, microphone, photos, or
-  files. The app can read text out loud using your device's built-in text-to-speech, which happens
-  locally and sends nothing anywhere.</p>
+  <h2>3. How long it is kept</h2>
+  <p>The room — with every nickname and move in it — is <strong>deleted when the game ends</strong>. If a game
+  is abandoned, the room is removed the next time one of its players opens Nightfall, and nobody can join a
+  room older than 3 hours. The anonymous ID holds no personal information; you can ask us to delete it at any
+  time (see Contact).</p>
 
-  <h2>5. Sharing with third parties</h2>
-  <p>We do not share your data with anyone, because we never collect it in the first place.</p>
+  <h2>4. Security and app verification</h2>
+  <p>Data travels encrypted (HTTPS). Database rules let each phone read only what it is allowed to see.
+  Firebase App Check uses Google Play Integrity (Android) or Apple App Attest (iOS) to confirm that requests
+  come from the genuine Nightfall app; these checks do not give us any personal information.</p>
 
-  <h2>6. Children</h2>
-  <p>Because Nightfall collects no data and has no accounts, ads, or internet features, it is safe
-  for players of all ages.</p>
+  <h2>5. Where it is processed</h2>
+  <p>The game database is hosted by Google in the European Union (Belgium, europe-west1). Like any internet
+  service, Google processes your device's IP address to deliver and protect the connection. See
+  <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a>.</p>
 
-  <h2>7. Changes to this policy</h2>
-  <p>If this policy changes, the updated version will be posted on this page with a new "last updated"
-  date.</p>
+  <h2>6. What we do not do</h2>
+  <p>No advertising, no analytics, no tracking across apps or websites, and no selling or sharing of data.
+  We do not use the data for anything other than running the game you are playing.</p>
 
-  <h2>8. Contact</h2>
-  <p>Questions about this policy? Email <a href="mailto:umutcan199726@gmail.com">umutcan199726@gmail.com</a>.</p>
+  <h2>7. Permissions</h2>
+  <p>Nightfall does not request access to your contacts, location, camera, microphone, photos or files.
+  Multi-device mode uses the internet. The app can read text aloud using your device's built-in text-to-speech,
+  which happens locally.</p>
+
+  <h2>8. Your rights</h2>
+  <p>Under the GDPR and Turkey's KVKK you can ask to access or delete data about you. Because rooms are deleted
+  automatically and we hold no names or contact details, there is usually nothing left to delete — but you can
+  always write to us.</p>
+
+  <h2>9. Children</h2>
+  <p>Nightfall has no ads, no accounts and no tracking. In multi-device mode children should use a nickname
+  rather than their real name.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new "last updated" date.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions or requests? Email <a href="mailto:umutcan199726@gmail.com">umutcan199726@gmail.com</a>.</p>
 
   <footer>
-    Nightfall — a cozy, offline werewolf party game for one phone. Works offline and collects no personal data.
+    Nightfall — a cozy werewolf party game. Play on one phone offline, or on everyone's phones together.
   </footer>
 </main>
 </body>
